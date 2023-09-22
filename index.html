@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Галактика</title>
+</head>
+<body>
+    <audio src="./music/Земляне - Трава У Дома.mp3" autoplay></audio>
+    <header class="header">
+        <div class="header_start">
+            <img class="header_earth" src="./images/header/planet-earth.png" alt="">
+            <div>
+                <ul class="header_list">
+                    <li>Главная</li>
+                    <li><a class="header_list-news" href="./pages/news.html"> Новости </a>  </li> 
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Ещё</button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="./pages/about-us.html">О нас</a>
+                            <a href="./pages/more.html">Подробнее</a>
+                            <a href="./pages/estimates.html">Отзыв</a>
+                        </div>
+                      </div>
+                </ul>
+            </div>
+            <a href=".//sign-in/index.html" class="header_a">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Войти
+            </a>
+            <img class="header_burger" onclick="headerModal('flex')" src="./images/header/hamburger-menu.png" alt="">
+        </div>
+        <div class="header-modal">
+            <div class="header-modal__blur" onclick="headerModal('none')"></div>
+            <div class="header-modal__content">
+                <div class="header-modal__box-top">
+                    <img src="" alt="">
+                    <img src="./images/header/x-mark.png" alt="" class="header-modal__icons" id="header-modal__x"
+                        onclick="headerModal('none')">
+                </div>
+                <ul class="header__list header-modal__list">
+                    <li>
+                        Главная
+                    </li>
+                    <li>
+                        Новости
+                    </li>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn">Ещё</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#">О нас</a>
+                          <a href="#">Подробнее</a>
+                          <a href="#">Земля</a>
+                        </div>
+                      </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="main_system">
+            <div class="container">
+                <div class="main_system-img-d">
+                    <img class="main_system-img" src="https://i.yapx.ru/Gu7a8.gif" alt="">
+                </div>
+                <h2 class="main_system-h2">Солнечная система</h2>
+                <p class="main_system-info">Солнечная система — звёздная система в галактике Млечный Путь, включающая Солнце и естественные космические объекты, обращающиеся вокруг него: планеты, их спутники, карликовые планеты, астероиды, метеороиды, кометы и космическую пыль.</p>
+            </div>
+        </section>
+
+            <h2 class="main_planets">Планеты:</h2>
+
+        <section class="main_mercury">
+            <div class="container">
+                <div class="main_mercury-common">
+                    <img class="mercury-img" src="./images/main/mercury.jpg" alt="">
+                <h2 class="main_mercury_title"> #Меркурий  <a href="https://starwalk.space/ru/news/mars-the-ultimate-guide"><img style="width: 18px; height: 18px; margin-left: 15px; margin-top: 10px;  transform: rotate(180deg);" src="./images/main/more.png" alt=""></a></h2>
+                <p class="main_mercury_subtitle">Мерку́рий — наименьшая планета Солнечной системы и самая близкая к Солнцу. Названа в честь древнеримского бога торговли — быстрого Меркурия, поскольку она движется по небу быстрее других планет </p>
+            </div>
+            </div>
+        </section>
+
+
+        <section class="main_earth">
+            <div class="container">
+                <div class="main_earth-common">
+                    <img class="earth-gif" src="https://i.gifer.com/n84.gif" alt=""> 
+                  <div class="more_earth">
+                    <p class="earth_title">#Земля</p><a href="https://indicator.ru/label/zemlya"><img style="width: 18px; height: 18px; margin-left: 15px; margin-top: 10px;" src="./images/main/more.png" alt=""></a>
+                  </div>  
+                    <p class="earth_subtitle">Земля́ — третья по удалённости от Солнца планета Солнечной системы. Самая плотная, пятая по диаметру и массе среди всех планет Солнечной системы и крупнейшая среди планет земной группы, в которую входят также Меркурий, Венера и Марс. Единственное известное человеку в настоящее время тело во Вселенной, населённое живыми организмами.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section class="main_mercury">
+            <div class="container">
+                <div class="main_mercury-common">
+                    <img class="mercury-img" src="./images/main/mars.jpg" alt="">
+                <h2 class="main_mercury_title">#Марс <a href="https://starwalk.space/ru/news/mars-the-ultimate-guide"><img style="width: 18px; height: 18px; margin-left: 15px; margin-top: 10px;  transform: rotate(180deg);" src="./images/main/more.png" alt=""></a></h2>
+                <p class="main_mercury_subtitle">Марс — четвёртая по удалённости от Солнца и седьмая по размеру планета Солнечной системы; масса планеты составляет 10,7 % массы Земли. Названа в честь Марса — древнеримского бога войны, соответствующего древнегреческому Аресу </p>
+            </div>
+            </div>
+        </section>
+
+
+        <section class="main_earth main_jupiter">
+            <div class="container">
+                <div class="main_earth-common">
+                    <img class="earth-gif" src="https://i.gifer.com/origin/f4/f49aaae7d3a5f27317166672c7bfd9a4_w200.gif" alt=""> 
+                  <div class="more_earth">
+                    <p class="earth_title">#Юпитер</p><a href="https://in-space.ru/planeta-yupiter/"><img style="width: 18px; height: 18px; margin-left: 15px; margin-top: 10px;" src="./images/main/more.png" alt="https://in-space.ru/planeta-yupiter/"></a>
+                  </div>  
+                    <p class="earth_subtitle">Юпи́тер — крупнейшая планета Солнечной системы, пятая по удалённости от Солнца. Наряду с Сатурном, Юпитер классифицируется как газовый гигант.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="main_mercury">
+            <div class="container">
+                <div class="main_mercury-common">
+                    <img class="mercury-img" src="./images/main/saturn.jpg" alt="">
+                <h2 class="main_mercury_title">#Сатурн <a href="https://starwalk.space/ru/news/facts-about-saturn-explore-the-amazing-ringed-planet"><img style="width: 18px; height: 18px; margin-left: 15px; margin-top: 10px;  transform: rotate(180deg);" src="./images/main/more.png" alt=""></a></h2>
+                <p class="main_mercury_subtitle">Сату́рн — шестая планета по удалённости от Солнца и вторая по размерам планета в Солнечной системе после Юпитера. Сатурн классифицируется как газовая планета-гигант. Сатурн назван в честь римского бога земледелия </p>
+            </div>
+            </div>
+        </section>
+
+        <section class="main_earth main_venera">
+            <div class="container">
+                <div class="main_earth-common">
+                    <img class="earth-gif" src="https://i.gifer.com/UK7n.gif" alt=""> 
+                  <div class="more_earth">
+                    <p class="earth_title">#Венера</p><a href="https://in-space.ru/planeta-venera/"><img style="width: 18px; height: 18px; margin-left: 15px; margin-top: 10px;" src="./images/main/more.png" alt="https://in-space.ru/planeta-yupiter/"></a>
+                  </div>  
+                    <p class="earth_subtitle">Вене́ра — вторая по удалённости от Солнца и шестая по размеру планета Солнечной системы, наряду с Меркурием, Землёй и Марсом принадлежащая к семейству планет земной группы. Названа в честь древнеримской богини любви Венеры. По ряду характеристик — например, по массе и размерам — Венера считается «сестрой» Земли</p>
+                </div>
+            </div>
+        </section>
+
+       <section class="main_mercury">
+            <div class="container">
+                <div class="main_mercury-common">
+                    <img class="mercury-img" src="./images/main/neptun.jpg" alt="">
+                <h2 class="main_mercury_title">#Нептун <a href="https://in-space.ru/planeta-neptun/"><img style="width: 18px; height: 18px; margin-left: 15px; margin-top: 10px;  transform: rotate(180deg);" src="./images/main/more.png" alt=""></a></h2>
+                <p class="main_mercury_subtitle">Непту́н — восьмая и самая дальняя от Солнца планета Солнечной системы. Его масса превышает массу Земли в 17,2 раза и является третьей среди планет Солнечной системы, а по экваториальному диаметру Нептун занимает четвёртое место, превосходя Землю в 3,9 раза. Планета названа в честь Нептуна — римского бога морей </p>
+            </div>
+            </div>
+        </section> 
+
+        <section class="main_earth main_uran">
+            <div class="container">
+                <div class="main_earth-common">
+                    <img class="earth-gif" src="https://i.gifer.com/origin/a7/a729f99ef86986a2b1805b1be72c41c4.gif" alt=""> 
+                  <div class="more_earth">
+                    <p class="earth_title">#Уран</p><a href="https://indicator.ru/label/uran"><img style="width: 18px; height: 18px; margin-left: 15px; margin-top: 10px;" src="./images/main/more.png" alt="https://in-space.ru/planeta-yupiter/"></a>
+                  </div>  
+                    <p class="earth_subtitle">Ура́н — планета Солнечной системы, седьмая по удалённости от Солнца, третья по диаметру и четвёртая по массе. Была открыта в 1781 году английским астрономом Уильямом Гершелем и названа в честь греческого бога неба Урана. Уран стал первой планетой, обнаруженной в Новое время и при помощи телескопаю.</p>
+                </div>
+            </div>
+        </section>
+
+        <center>
+             <section class="main_earth main_sun">
+            <div class="container">
+                <div class="main_earth-common main_sun">
+                    <img class="earth-gif" src="https://i.gifer.com/3dzy.gif" alt=""> 
+                  <div class="more_earth main_sun-d1">
+                    <p class="earth_title">#Солнце</p><a href="http://files.school-collection.edu.ru/dlrstore/c3fc5146-f2c9-78fe-809b-1e8b6e709867/00119626417526684.htm"><img style="width: 18px; height: 18px; margin-left: 15px; margin-top: 10px;" src="./images/main/more.png" alt="https://in-space.ru/planeta-yupiter/"></a>
+                  </div>  
+                    <p class="earth_subtitle">Со́лнце — одна из звёзд нашей Галактики и единственная звезда Солнечной системы. Вокруг Солнца обращаются другие объекты этой системы: планеты и их спутники, карликовые планеты и их спутники, астероиды, метеороиды, кометы и космическая пыль. По спектральной классификации Солнце относится к типу G2V.</p>
+                </div>
+            </div>
+        </section>
+        </center>
+       
+     <section class="main_all-planets container">
+            <center>
+                <h2 class="main_all-planets_h2">Солнечная система: строение и характеристика</h2>
+            <p class="main_all-planets_p">Рассказываем, как устроена звёздная система, в которой мы живём. Какие планеты вращаются вокруг Солнца, что находится в межпланетном пространстве и другие интересные сведения о нашей Солнечной системе.</p>
+            <img class="main_all-planets-img" src="./images/main/all_planets.jpg" alt="">   
+        </center>
+            <p>
+                Солнечная система — звёздная система в галактике Млечный Путь, включающая Солнце и естественные космические объекты, обращающиеся вокруг него: планеты, их спутники, карликовые планеты, астероиды, метеороиды, кометы и космическую пыль.
+            </p>
+            <p>
+                В состав солнечной системы входит восемь основных планет и пять карликовых, вращающихся приблизительно в одной плоскости. По своим физическим свойствам планеты делятся на земную группу и планеты-гиганты.
+            </p>
+            <p>
+                Планеты земной группы относительно небольшие и плотные, состоят из металлов и минералов. К ним относятся:
+            </p>
+            <ul>
+                <li>Меркурий, </li>
+                <li>Венера, </li>
+                <li>Земля, </li>
+                <li>Марс. </li>
+            </ul>
+            <ul>
+                <li>Юпитер, </li>
+                <li>Сатурн, </li>
+                <li>Уран, </li>
+                <li>Нептун. </li>
+            </ul>
+            <p>Орбита Земли делит солнечную систему на две условные области. Во внутренней находятся ближайшие к Солнцу планеты — Меркурий и Венера. Во внешней области — более удалённые от Солнца, чем Земля: Марс, Юпитер, Сатурн, Уран и Нептун.</p>
+            <p>Пространство между орбитами Марса и Юпитера, а также за Нептуном (пояс Койпера) занимают малые небесные тела: малые планеты и астероиды. Также по пространству Солнечной системы курсируют кометы и потоки метеороидов. </p>
+
+            <center>
+                <h2 class="main_all-planets_h2-sput">Спутники</h2>
+                <img class="main_all-planets-sput-img" src="./images/main/sputnik.jpg" alt="">
+                <p class="main_all-planets_sput-info">Спутник или искусственный спутник — это объект, намеренно выведенный на орбиту в космическом пространстве. За исключением пассивных спутников, большинство спутников имеют систему выработки электроэнергии для бортового оборудования, например, солнечные панели или радиоизотопные термоэлектрические генераторы.</p>
+                
+                <h2 class="main_all-planets_h2-sput">Другие объекты Солнечной системы</h2>
+                <img class="main_all-planets-sput-img" alt="" src="./images/main/asteroid.jpg">
+            </center>
+            <p>Помимо планет и их спутников, в солнечную систему входит множество малых небесных тел — карликовых планет, астероидов, комет и метеороидов. </p>
+            <p>Большинство астероидов сосредоточено в поясе между орбитами Марса и Юпитера. Это объекты неправильной формы, состоящие из металлов и силикатов. Хотя некоторые астероиды даже имеют собственные спутники, их масса слишком мала, чтобы удерживать атмосферу. Крупнейшие — карликовая планета Церера, астероиды Паллада, Веста и Гигея.</p>
+            <p>Кометы — малые небесные тела, движущиеся по вытянутым орбитам. Они состоят из замёрзших газов и космической пыли. По мере приближения к Солнцу частицы вещества нагреваются, образуя горящую голову и хвост кометы. Самая известная комета — Галлея — обращается вокруг Солнца за 76 лет. </p>
+            <p>Постепенно кометы разрушаются, превращаясь в поток более мелких частиц — метеороидов. Из-за небольших размеров они легко притягиваются планетами, но сгорают в плотной атмосфере. Горящие метеоры выглядят с Земли как падающие звёзды. Поэтому метеорный поток в просторечии называют звездопадом. </p>
+        </section>
+    </main>
+    <footer class="footer">
+        <section>
+            <center>
+                 <h2 class="footer-title">С нами можно связаться</h2>
+            <p class="footer-subtitle">Ежедневно с 10:00 до 19:00</p>
+            <div class="footer-list">
+                <img class="img-abso" src="https://assets-global.website-files.com/5992f848f97d3700011413c4/5eba8901e60fd707e37ffea9_leaf-2.svg" alt="">
+                    <div class="flex">
+  <div class="footer-list-d1">
+                    <img class="footer-list-d1_img" src="./images/main/icons8-телеграм-94.png" alt="">
+                   <div class="footer-list-d1-d2"> <a href="https://t.me/Rokrou" class="footer-list-d1_title">Мой тг</a></div>
+                    <a href="" class="footer-list-d1_subtitle">Телеграмм бот</a>
+                   
+                </div>
+                <div class="footer-list-d1">
+                    <img class="footer-list-d1_img" src="./images/main/icons8-входящий-звонок-на-iphone-48.png" alt="">
+                    <div>
+                    <a href="tel: +996555995557" class="footer-list-d1_title">Мой номер</a></div>
+                    <a href="" class="footer-list-d1_subtitle">Звонок на территори КР бесплатный</a>
+                
+                    
+                </div>
+                    </div>
+              <div class="flex">
+                <div class="footer-list-d1">
+                    <img class="footer-list-d1_img" src="./images/main/icons8-сообщение-50.png" alt="">
+                    <div> <a href="mailto: aidynkerimbekov03@gmail.com" class="footer-list-d1_title">aidynkerimbekov03@gmail.com</a></div>
+                    <a href="" class="footer-list-d1_subtitle">Написать мне письмо</a>
+                   
+                </div>
+                <div class="footer-list-d1">
+                    <img class="footer-list-d1_img" src="./images/main/icons8-позиция-на-карте-мира-64.png" alt="">
+                    <div> <a href="https://www.google.com/maps/place/105+%D1%83%D0%BB.+%D0%98%D1%81%D0%B0%D0%BD%D0%BE%D0%B2%D0%B0,+%D0%91%D0%B8%D1%88%D0%BA%D0%B5%D0%BA/@42.8772934,74.5895647,17z/data=!3m1!4b1!4m5!3m4!1s0x389ec8201bd287c9:0x3a3918ff550b0b9f!8m2!3d42.8772895!4d74.5921396?hl=ru-KG" class="footer-list-d1_title">Исанова 105/3</a>                </div>
+                    <a href="" class="footer-list-d1_subtitle">Посмотреть на карте</a>
+                </div>
+              </div>
+                
+                <img class="img-abso2" src="https://assets-global.website-files.com/5992f848f97d3700011413c4/5eba890149efbd2457d95956_leaf-1.svg" alt="">
+            </div>
+            </center>
+           
+        </section> 
+    <section class="footer-sect">
+            <div class="container">
+                <div class=" flex-foot">
+                      <div class="flex-footer container">
+            <ul class="footer__list">
+                <li><a href="./pages/about-us.html">О нас</a> </li>
+                <li><a href="./pages/about-us.html">Контакты</a></li>
+                <li><a href="mailto: aidynkerimbekov03@gmail.com">Aidynkerimbekov03@gmail.com</a> </li>
+                <li><a href="tel: +996555995557">Phone: (0555) 995-557</a> </li>
+                <li>При поддержке компании <a style="color: rgb(57, 57, 224);" href="https://www.codifylab.com/">codify lab</a></li>
+       </div>
+       <div class="five__img">
+        <p>г. Бишкек, ул. Исанова 105/3</p>
+        <img src="./images/main/logo__footer.png" alt="">
+        <img src="./images/main/logo__footer2.png" alt="">
+        <img src="./images/main/logo__footer3.png" alt="">
+        <img src="./images/main/logo__footer4.png" alt="">
+       </div>
+                </div>
+                
+       <hr>
+       <div>
+        <p class="p-bish">© Бишкек, 2021–2022</p>
+       </div>
+     
+        </section> 
+    </footer> 
+    <script src="./js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+        <script>
+        SmoothScroll({
+            // Время скролла 400 = 0.4 секунды
+            animationTime    : 800,
+            // Размер шага в пикселях 
+            stepSize         : 75,
+
+            // Дополнительные настройки:
+            
+            // Ускорение 
+            accelerationDelta : 30,  
+            // Максимальное ускорение
+            accelerationMax   : 2,   
+
+            // Поддержка клавиатуры
+            keyboardSupport   : true,  
+            // Шаг скролла стрелками на клавиатуре в пикселях
+            arrowScroll       : 50,
+
+            // Pulse (less tweakable)
+            // ratio of "tail" to "acceleration"
+            pulseAlgorithm   : true,
+            pulseScale       : 4,
+            pulseNormalize   : 1,
+
+            // Поддержка тачпада
+            touchpadSupport   : true,
+        })
+        </script>
+</body>
+</html>
